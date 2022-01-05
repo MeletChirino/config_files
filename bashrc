@@ -100,3 +100,8 @@ source $OSH/oh-my-bash.sh
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
 alias v="vim ."
+alias ros-start="source /opt/ros/galactic/setup.bash"
+source /opt/ros/galactic/setup.bash
+export ROS_DOMAIN_ID=7
+alias ros-dep="rosdep install -i --from-path src --rosdistro galactic -y"
+alias ros-pkg="ros2 pkg create --build-type ament_python"
